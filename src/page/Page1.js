@@ -9,9 +9,7 @@ const Page1 = () => {
       <div className="container mx-auto px-4 pt-28 lg:pt-20 ">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 text-center space-y-6 ">
-            <h1 className="text-5xl lg:text-8xl font-bold mb-4 font-londrina">
-              $APUGROOT
-            </h1>
+            <h1 className="text-5xl lg:text-8xl font-bold mb-4 ">$APUGROOT</h1>
             <p className="text-xl mb-8">one of apu apustaja best frens</p>
             <div className="space-x-4 ">
               <a
