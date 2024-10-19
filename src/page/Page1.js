@@ -41,9 +41,7 @@ const Page1 = () => {
                 <span>Chart</span>
               </a>
             </div>
-            <h1 className="text-xs md:text-xl font-bold lg:pt-16">
-              CA: 3YP4dPY8NkSnTbR4vUjxFQNVYmvhR9qcgAK89wowU2EK
-            </h1>
+            <h1 className="text-xs md:text-xl font-bold lg:pt-16">CA:</h1>
           </div>
           <div className="lg:w-1/2  relative">
             <img src={LogoApu} alt="Aped Hero" className="rounded-lg " />
