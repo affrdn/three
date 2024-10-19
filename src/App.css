@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (any-hover: hover) {
+  .menu__link:hover {
+    color: #225df5;
+  }
+  .button:hover {
+    -webkit-transform: translate(0.1875rem, 0.1875rem);
+    transform: translate(0.1875rem, 0.1875rem);
+    box-shadow: -7px -7px 4px 0 rgba(0, 0, 0, 0.45) inset,
+      1.505px 1.505px 0 1.502px #000;
+  }
+  .footer__top-social-item:hover img {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+  }
+  .footer__bottom-osnovo:hover {
+    opacity: 1;
+  }
+  .bottom-hero__item:hover img {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+  }
+  .item-tokenomics__item-value button:hover {
+    opacity: 1;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
+body {
+  @apply font-renie;
 }
