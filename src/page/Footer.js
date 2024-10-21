@@ -39,7 +39,7 @@ const Footer = () => {
       <div className="container mx-auto text-center ">
         <p className="font-bold">
           <span>© 2024 </span>
-          <span>A P U G T O O T</span>
+          <span>A P U G R O O T</span>
         </p>
       </div>
     </footer>
