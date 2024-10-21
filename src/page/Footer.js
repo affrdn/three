@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-8 pb-2  bottom-0 custom-pattern-1">
+    <footer className="w-full pt-8 pb-2  bottom-0 bg-[#849b33]">
       <div className="flex justify-center items-center py-2 space-x-4 text-green-950">
         <a
           href="mailto:grootapustaja@gmail.com"

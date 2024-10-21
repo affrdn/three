@@ -5,21 +5,26 @@ import LogoApu from "../assets/logo-1.png";
 
 const Page1 = () => {
   return (
-    <div className="relative  text-white ">
+    <div
+      className="relative  text-white bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${require("../assets/background-1.png")})`,
+      }}
+    >
       <div className="container mx-auto px-4 pt-28 lg:pt-20 ">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 text-center lg:space-y-8 lg:ml-7 lg:pt-16 pt-6">
             <h1 className="text-6xl md:text-9xl lg:text-[11rem] font-bold mb-2">
               $APUGROOT
             </h1>
-            <p className="md:text-2xl lg:text-4xl lg:mb-8 mb-4">
+            <p className="md:text-2xl lg:text-4xl lg:mb-8 mb-4 font-extrabold ">
               one of apu apustaja best frens
             </p>
             <div className="space-x-5 ">
               {/* lg:py-3 lg:px-6 py-2 px-3 */}
               <a
                 href="https://dexscreener.com/solana/"
-                className="bg-[#849b33] hover:bg-[#5b6728] text-white font-bold rounded-full inline-flex items-center justify-center button h-8 w-24 lg:h-12 lg:w-28"
+                className="bg-[#849b33] hover:bg-[#5b6728] text-white font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-24 lg:h-12 lg:w-28"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -40,7 +45,7 @@ const Page1 = () => {
 
               <a
                 href="https://www.dextools.io/"
-                className="bg-white hover:bg-slate-100 text-blue-500 font-bold rounded-full inline-flex items-center justify-center button h-8 w-20 lg:h-12 lg:w-28"
+                className="bg-white hover:bg-slate-100 text-[#43520d] font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 lg:h-12 lg:w-28"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -54,7 +59,7 @@ const Page1 = () => {
           </div>
         </div>
       </div>
-      <div className="custom-pattern-1 relative bottom-0 left-0 right-0 p-4 z-10 -rotate-1">
+      <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 -rotate-1">
         <div className="flex justify-center lg:space-x-60 space-x-28">
           <a
             href="https://t.me/apugroot"

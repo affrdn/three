@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 text-white z-50 py-2 md:px-32 px-2 custom-pattern-1">
+    <header className="fixed top-0 left-0 right-0 text-white z-50 py-2 md:px-32 px-2 bg-black bg-opacity-35">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <button
           onClick={handleReload}
@@ -29,7 +29,7 @@ const Navbar = () => {
           $APUGROOT
         </button>
         <button
-          className="inline-flex items-center bg-[#5b6728] hover:bg-[#728431] text-white font-bold rounded-lg button h-8 w-24 lg:h-12 lg:w-28 justify-center"
+          className="inline-flex items-center bg-[#849b33] hover:bg-[#5b6728] text-white font-bold rounded-lg button h-8 w-24 lg:h-12 lg:w-28 justify-center"
           onClick={handleClick}
         >
           <span className="flex items-center">{buttonText}</span>

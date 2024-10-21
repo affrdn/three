@@ -7,7 +7,7 @@ import Footer from "./page/Footer";
 
 function App() {
   return (
-    <div className="App custom-pattern">
+    <div className="App">
       <Navbar />
       <Page1 />
       <Page2 />
