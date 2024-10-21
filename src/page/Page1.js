@@ -41,11 +41,11 @@ const Page1 = () => {
             <p className="md:text-2xl lg:text-4xl lg:mb-8 mb-4 font-extrabold ">
               one of apu apustaja best frens
             </p>
-            <div className="space-x-5 ">
+            <div className="space-x-10 ">
               {/* lg:py-3 lg:px-6 py-2 px-3 */}
               <a
                 href="https://dexscreener.com/solana/"
-                className="bg-[#849b33] hover:bg-[#5b6728] text-white font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-24 md:h-12 md:w-28"
+                className="bg-[#849b33] hover:bg-[#5b6728] md:text-2xl lg:text-3xl text-white font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-24 md:h-12 md:w-44"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -66,24 +66,26 @@ const Page1 = () => {
 
               <a
                 href="https://www.dextools.io/"
-                className="bg-white hover:bg-slate-100 text-[#43520d] font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 md:h-12 md:w-28"
+                className="bg-white hover:bg-slate-100 text-[#43520d] md:text-2xl lg:text-3xl font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 md:h-12 md:w-32"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span>Chart</span>
               </a>
             </div>
-            <h1 className="flex text-xs px-4 md:text-2xl lg:text-4xl font-bold lg:mt-10 mt-6 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center">
-              <span className="lg:mr-4 mr-3">CA: {ContractAddress}</span>
-              <CopyToClipboard text={ContractAddress} onCopy={handleCopy}>
-                <span className="cursor-pointer flex items-center">
-                  {copied ? (
-                    "Copied"
-                  ) : (
-                    <FaRegCopy className="lg:h-6 lg:w-6 md:h-4 md:w-4 h-2 w-2" />
-                  )}
-                </span>
-              </CopyToClipboard>
+            <h1 className="flex text-xs md:text-3xl font-bold lg:mt-12 mt-6 py-1 px-4 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center">
+              {copied ? (
+                <span>Copied</span>
+              ) : (
+                <>
+                  <span className="lg:mr-4 mr-2">CA: {ContractAddress}</span>
+                  <CopyToClipboard text={ContractAddress} onCopy={handleCopy}>
+                    <span className="cursor-pointer">
+                      <FaRegCopy className="lg:h-6 lg:w-6 md:h-4 md:w-4 h-3 w-3" />
+                    </span>
+                  </CopyToClipboard>
+                </>
+              )}
             </h1>
           </div>
           <div className="lg:w-1/2  relative">

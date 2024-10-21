@@ -22,7 +22,7 @@ const Page2 = () => {
               </h1>
             </div>
 
-            <div className="bg-white text-[#43520d] font-extrabold rounded-xl  lg:text-3xl text-2xl md:h-auto h-52 py-4 px-1.5 border-solid border-8 border-s-2 border-e-4 border-[#b6c769] ">
+            <div className="bg-white text-[#43520d] font-extrabold rounded-xl lg:text-3xl text-2xl md:h-auto h-64 py-4 px-1.5 border-solid border-8 border-s-2 border-e-4 border-[#b6c769] ">
               <span className=" border-solid border-2 border-r border-l border-t border-[#b6c769] ">
                 Meet $APUGROOT one of apu apustaja best frens a sentient
                 tree-like creature who communicates primarily through the phrase
