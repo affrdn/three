@@ -1,21 +1,27 @@
 import React from "react";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
-import LogoApu from "../assets/ApuLogo1000.png";
+import LogoApu from "../assets/logo-1.png";
 
 const Page1 = () => {
   return (
-    <div className="relative bg-gray-900 text-white ">
+    <div className="relative  text-white ">
       <div className="container mx-auto px-4 pt-28 lg:pt-20 ">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 text-center space-y-6 ">
-            <h1 className="text-5xl lg:text-8xl font-bold mb-4 ">$APUGROOT</h1>
-            <p className="text-xl mb-8">one of apu apustaja best frens</p>
-            <div className="space-x-4 ">
+          <div className="lg:w-1/2 text-center lg:space-y-8 lg:ml-7 lg:pt-16 pt-6">
+            <h1 className="text-6xl md:text-9xl lg:text-[11rem] font-bold mb-2">
+              $APUGROOT
+            </h1>
+            <p className="md:text-2xl lg:text-4xl lg:mb-8 mb-4">
+              one of apu apustaja best frens
+            </p>
+            <div className="space-x-5 ">
+              {/* lg:py-3 lg:px-6 py-2 px-3 */}
               <a
                 href="https://dexscreener.com/solana/"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-bold lg:py-3 lg:px-6 py-2 px-3 rounded-full inline-flex items-center button"
+                className="bg-[#849b33] hover:bg-[#5b6728] text-white font-bold rounded-full inline-flex items-center justify-center button h-8 w-24 lg:h-12 lg:w-28"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 <span>Buy Now</span>
                 <svg
@@ -31,22 +37,24 @@ const Page1 = () => {
                   />
                 </svg>
               </a>
+
               <a
-                href="https://www.dextools.io/app/en/solana/pair-explorer/BiZ5yY9dVajuwZynb4GQb43XaCUX7AnJA1HuhETBJrQi?t=1728670177075"
-                className="bg-white hover:bg-slate-100 text-blue-500 font-bold lg:py-3 lg:px-6 py-2 px-3 rounded-full inline-flex button"
+                href="https://www.dextools.io/"
+                className="bg-white hover:bg-slate-100 text-blue-500 font-bold rounded-full inline-flex items-center justify-center button h-8 w-20 lg:h-12 lg:w-28"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 <span>Chart</span>
               </a>
             </div>
-            <h1 className="text-xs md:text-xl font-bold lg:pt-10">CA:</h1>
+            <h1 className="text-xs md:text-xl font-bold lg:pt-10 pt-6">CA: </h1>
           </div>
           <div className="lg:w-1/2  relative">
             <img src={LogoApu} alt="Aped Hero" className="rounded-lg " />
           </div>
         </div>
       </div>
-      <div className="relative bottom-0 left-0 right-0 p-4 bg-white z-10 -rotate-2">
+      <div className="custom-pattern-1 relative bottom-0 left-0 right-0 p-4 z-10 -rotate-1">
         <div className="flex justify-center lg:space-x-60 space-x-28">
           <a
             href="https://t.me/apugroot"

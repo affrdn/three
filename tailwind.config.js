@@ -9,6 +9,10 @@ module.exports = {
         renie: ["Reenie Beanie", "cursive"],
         londrina: ["Londrina Sketch", "sans-serif"],
       },
+      animation: {
+        scroll: "scroll 10s linear infinite",
+        nod: "nod 0.6s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
