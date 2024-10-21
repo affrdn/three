@@ -16,7 +16,7 @@ const Navbar = () => {
     // Mengubah kembali ke "Generate NFT" setelah 1 detik
     setTimeout(() => {
       setButtonText("Generate NFT");
-    }, 700);
+    }, 800);
   };
 
   return (
