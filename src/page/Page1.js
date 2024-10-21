@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
 import LogoApu from "../assets/logo-1.png";
