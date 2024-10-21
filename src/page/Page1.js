@@ -9,15 +9,6 @@ const Page1 = () => {
   const [copied, setCopied] = useState(false);
   const ContractAddress = "26s3UGB9hund1qspApy1zYgCritxAooGg7o63BMn89Yq";
 
-  useEffect(() => {
-    if (copied) {
-      const timer = setTimeout(() => {
-        setCopied(false);
-      }, 1000);
-      return () => clearTimeout(timer);
-    }
-  }, [copied]);
-
   const handleCopy = () => {
     setCopied(true);
     setTimeout(() => {
