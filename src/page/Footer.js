@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaTelegramPlane, FaMedium } from "react-icons/fa"; // Import the email, Telegram, and Twitter icons
+import { FaEnvelope, FaTelegramPlane } from "react-icons/fa"; // Import the email, Telegram, and Twitter icons
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {

@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
 import LogoApu from "../assets/logo-1.png";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { FaRegCopy } from "react-icons/fa";
 
 const Page1 = () => {
+  const [copied, setCopied] = useState(false);
+  const ContractAddress = "26s3UGB9hund1qspApy1zYgCritxAooGg7o63BMn89Yq";
+
+  useEffect(() => {
+    if (copied) {
+      const timer = setTimeout(() => {
+        setCopied(false);
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [copied]);
+
+  const handleCopy = () => {
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000); // Change back after 2 seconds
+  };
+
   return (
     <div
       className="relative  text-white bg-cover bg-center"
@@ -24,7 +45,7 @@ const Page1 = () => {
               {/* lg:py-3 lg:px-6 py-2 px-3 */}
               <a
                 href="https://dexscreener.com/solana/"
-                className="bg-[#849b33] hover:bg-[#5b6728] text-white font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-24 lg:h-12 lg:w-28"
+                className="bg-[#849b33] hover:bg-[#5b6728] text-white font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-24 md:h-12 md:w-28"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -45,21 +66,32 @@ const Page1 = () => {
 
               <a
                 href="https://www.dextools.io/"
-                className="bg-white hover:bg-slate-100 text-[#43520d] font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 lg:h-12 lg:w-28"
+                className="bg-white hover:bg-slate-100 text-[#43520d] font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 md:h-12 md:w-28"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span>Chart</span>
               </a>
             </div>
-            <h1 className="text-xs md:text-xl font-bold lg:pt-10 pt-6">CA: </h1>
+            <h1 className="flex text-xs px-4 md:text-2xl lg:text-4xl font-bold lg:mt-10 mt-6 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center">
+              <span className="lg:mr-4 mr-3">CA: {ContractAddress}</span>
+              <CopyToClipboard text={ContractAddress} onCopy={handleCopy}>
+                <span className="cursor-pointer flex items-center">
+                  {copied ? (
+                    "Copied"
+                  ) : (
+                    <FaRegCopy className="lg:h-6 lg:w-6 md:h-4 md:w-4 h-2 w-2" />
+                  )}
+                </span>
+              </CopyToClipboard>
+            </h1>
           </div>
           <div className="lg:w-1/2  relative">
             <img src={LogoApu} alt="Aped Hero" className="rounded-lg " />
           </div>
         </div>
       </div>
-      <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 -rotate-1">
+      <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 md:-rotate-1  border-solid border-4 border-r border-l border-t ">
         <div className="flex justify-center lg:space-x-60 space-x-28">
           <a
             href="https://t.me/apugroot"
