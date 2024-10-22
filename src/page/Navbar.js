@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-// import { Menu } from "lucide-react";
-// import { SiReadthedocs } from "react-icons/si";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const handleReload = (e) => {
@@ -9,18 +7,45 @@ const Navbar = () => {
   };
 
   const [buttonText, setButtonText] = useState("Generate NFT");
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleClick = () => {
     setButtonText("Coming Soon");
 
-    // Mengubah kembali ke "Generate NFT" setelah 1 detik
+    // Change back to "Generate NFT" after 1 second
     setTimeout(() => {
       setButtonText("Generate NFT");
     }, 800);
   };
 
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY > lastScrollY) {
+      // Scrolling down
+      setIsVisible(false);
+    } else {
+      // Scrolling up
+      setIsVisible(true);
+    }
+
+    setLastScrollY(scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="fixed top-0 left-0 right-0 text-white z-50 py-2 md:px-32 px-2 bg-black bg-opacity-50">
+    <header
+      className={`fixed top-0 left-0 right-0 text-white z-50 py-2 md:px-32 px-2 bg-black bg-opacity-50 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <button
           onClick={handleReload}
