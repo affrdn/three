@@ -33,7 +33,7 @@ const Page2 = () => {
         </div>
       </div>
 
-      <div className="relative bottom-0 left-0 right-0 py-4 bg-[#849b33] z-10  border-solid border-4 border-r border-l">
+      <div className="relative bottom-0 left-0 right-0 py-4 bg-[#849b33] z-10 rotate-1 border-solid border-4 border-r border-l">
         <div className="overflow-hidden text-black  whitespace-nowrap text-3xl lg:text-5xl w-full">
           <div className="flex animate-scroll">
             $APUGROOT $APUGROOT $APUGROOT $APUGROOT $APUGROOT $APUGROOT

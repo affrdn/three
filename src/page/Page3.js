@@ -4,7 +4,7 @@ const Page3 = () => {
   return (
     <div
       id="page3"
-      className="lg:py-10 lg:px-10 px-2 py-4 bg-auto bg-center"
+      className="lg:py-10 lg:px-10 px-2 py-4 bg-cover bg-center"
       style={{
         backgroundImage: `url(${require("../assets/bg-3.jpg")})`,
       }}
