@@ -60,7 +60,7 @@ const Page1 = () => {
                 to="page3"
                 smooth={true}
                 duration={500}
-                className="bg-white hover:bg-slate-100 text-[#43520d] md:text-2xl lg:text-3xl font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 md:h-12 md:w-32"
+                className="bg-white hover:bg-slate-100 cursor-pointer text-[#43520d] md:text-2xl lg:text-3xl font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 md:h-12 md:w-32"
               >
                 <span>Chart</span>
               </Link>
