@@ -90,7 +90,7 @@ const Page1 = () => {
       <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 md:-rotate-1 border-solid border-4 border-r border-l border-t">
         <div className="flex justify-center lg:space-x-60 space-x-28">
           <a
-            href="https://x.com/apugrootsol"
+            href="https://x.com/"
             className="text-white hover:scale-90 transition-transform duration-100"
             rel="noopener noreferrer"
             target="_blank"
@@ -102,7 +102,7 @@ const Page1 = () => {
             />
           </a>
           <a
-            href="https://x.com/apugrootsol"
+            href="https://x.com/"
             className="text-white hover:scale-90 transition-transform duration-100"
             rel="noopener noreferrer"
             target="_blank"
