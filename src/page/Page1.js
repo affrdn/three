@@ -8,13 +8,13 @@ import { FaRegCopy } from "react-icons/fa";
 
 const Page1 = () => {
   const [copied, setCopied] = useState(false);
-  const ContractAddress = "TBA";
+  const ContractAddress = "EWQZj3fteHnkfad7oK46pES5QixJm7nbL8izM3xfzAHx";
 
   const handleCopy = () => {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 2000);
+    }, 700);
   };
 
   return (
@@ -68,7 +68,7 @@ const Page1 = () => {
                 <span>Chart</span>
               </Link>
             </div>
-            <h1 className="flex text-xs md:text-2xl font-bold lg:mt-12 mt-4 py-1 px-4 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center">
+            <h1 className="flex button text-xs md:text-2xl font-bold lg:mt-12 mt-4 py-1 px-4 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center">
               {copied ? (
                 <span>Copied</span>
               ) : (
