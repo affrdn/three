@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react"; // Corrected import
+import { Link } from "react-scroll"; // Import from react-scroll
 
 const Navbar = () => {
-  const handleReload = (e) => {
-    e.preventDefault();
-    window.location.reload();
-  };
-
   const [buttonText, setButtonText] = useState("Generate NFT");
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -19,7 +15,7 @@ const Navbar = () => {
     }, 800);
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;
 
     if (scrollY > lastScrollY) {
@@ -31,14 +27,14 @@ const Navbar = () => {
     }
 
     setLastScrollY(scrollY);
-  };
+  }, [lastScrollY]); // Add lastScrollY as a dependency
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [handleScroll]); // Use handleScroll in the dependency array
 
   return (
     <header
@@ -47,12 +43,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <button
-          onClick={handleReload}
-          className="text-xl md:text-2xl font-bold"
+        <Link
+          to="page1"
+          smooth={true}
+          duration={500}
+          className="text-xl md:text-2xl font-bold cursor-pointer"
         >
-          $APUGROOT
-        </button>
+          <span>$APUGROOT</span>
+        </Link>
         <button
           className="inline-flex items-center bg-[#849b33] hover:bg-[#5b6728] text-white font-bold rounded-lg button h-8 w-24 lg:h-12 lg:w-28 justify-center"
           onClick={handleClick}

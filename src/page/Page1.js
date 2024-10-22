@@ -19,6 +19,7 @@ const Page1 = () => {
 
   return (
     <div
+      id="page1"
       className="relative text-white bg-cover bg-center"
       style={{
         backgroundImage: `url(${require("../assets/background-1.png")})`,
