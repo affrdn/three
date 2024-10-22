@@ -6,7 +6,7 @@ const Page3 = () => {
       id="page3"
       className=" lg:py-10 lg:px-10 px-2 py-4 bg-cover bg-center "
       style={{
-        backgroundImage: `url(${require("../assets/background-3.png")})`,
+        backgroundImage: `url(${require("../assets/bg-3.jpg")})`,
       }}
     >
       <div className="relative w-full pb-[180%] md:pb-[50%]">

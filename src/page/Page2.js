@@ -6,7 +6,7 @@ const Page2 = () => {
     <div
       className="relative text-white bg-cover bg-center"
       style={{
-        backgroundImage: `url(${require("../assets/background-2.png")})`,
+        backgroundImage: `url(${require("../assets/bg-2.jpg")})`,
       }}
     >
       <div className="container mx-auto px-4 pt-8 mb-4 lg:mb-0">

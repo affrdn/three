@@ -22,7 +22,7 @@ const Page1 = () => {
       id="page1"
       className="relative text-white bg-cover bg-center"
       style={{
-        backgroundImage: `url(${require("../assets/background-1.png")})`,
+        backgroundImage: `url(${require("../assets/bg-1.jpg")})`,
       }}
     >
       <div className="container mx-auto px-4 pt-28 lg:pt-20">
