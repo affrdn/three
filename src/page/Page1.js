@@ -55,14 +55,14 @@ const Page1 = () => {
                 </svg>
               </a>
 
-              <a
+              {/* <a
                 href="https://www.dextools.io/"
                 className="bg-white hover:bg-slate-100 text-[#43520d] md:text-2xl lg:text-3xl font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-20 md:h-12 md:w-32"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span>Chart</span>
-              </a>
+              </a> */}
             </div>
             <h1 className="flex text-xs md:text-3xl font-bold lg:mt-12 mt-6 py-1 px-4 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center">
               {copied ? (
