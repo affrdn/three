@@ -9,7 +9,6 @@ const Navbar = () => {
   const handleClick = () => {
     setButtonText("Coming Soon");
 
-    // Change back to "Generate NFT" after 1 second
     setTimeout(() => {
       setButtonText("Generate NFT");
     }, 800);
@@ -27,14 +26,14 @@ const Navbar = () => {
     }
 
     setLastScrollY(scrollY);
-  }, [lastScrollY]); // Add lastScrollY as a dependency
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleScroll]); // Use handleScroll in the dependency array
+  }, [handleScroll]);
 
   return (
     <header
