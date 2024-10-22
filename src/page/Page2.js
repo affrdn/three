@@ -16,7 +16,7 @@ const Page2 = () => {
           </div>
 
           <div className="lg:w-1/2">
-            <div className="bg-white text-[#43520d] font-extrabold rounded-lg md:-rotate-2 md:py-4 py-2 mb-6 border-solid border-8 border-t-2 border-e-2 border-[#b6c769]">
+            <div className="bg-white text-[#43520d] font-extrabold rounded-lg md:-rotate-2 md:py-4 py-2 mb-4 border-solid border-8 border-t-2 border-e-2 border-[#b6c769]">
               <h1 className="text-4xl lg:text-5xl md:text-start text-center font-bold ml-4 ">
                 #ABOUT APUGROOT
               </h1>

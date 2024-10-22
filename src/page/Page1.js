@@ -32,7 +32,7 @@ const Page1 = () => {
             <p className="md:text-2xl lg:text-4xl lg:mb-8 mb-4 font-extrabold ">
               one of apu apustaja best frens
             </p>
-            <div className="space-x-10 ">
+            <div className="lg:space-x-10 space-x-6">
               {/* lg:py-3 lg:px-6 py-2 px-3 */}
               <a
                 href="https://dexscreener.com/solana/"
