@@ -8,7 +8,7 @@ import { FaRegCopy } from "react-icons/fa";
 
 const Page1 = () => {
   const [copied, setCopied] = useState(false);
-  const ContractAddress = "EWQZj3fteHnkfad7oK46pES5QixJm7nbL8izM3xfzAHx";
+  const ContractAddress = "TBA";
 
   const handleCopy = () => {
     setCopied(true);
