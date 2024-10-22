@@ -4,10 +4,9 @@ const Page3 = () => {
   return (
     <div
       id="page3"
-      className="lg:py-10 lg:px-10 px-2 py-4 bg-cover bg-center "
+      className="lg:py-10 lg:px-10 px-2 py-4 bg-auto"
       style={{
         backgroundImage: `url(${require("../assets/bg-3.jpg")})`,
-        backgroundSize: "70%",
       }}
     >
       <div className="relative w-full pb-[180%] md:pb-[50%]">
