@@ -29,7 +29,7 @@ const Page1 = () => {
             <h1 className="text-6xl md:text-9xl lg:text-[11rem] font-bold mb-2">
               $APUGROOT
             </h1>
-            <p className="md:text-2xl lg:text-4xl lg:mb-8 mb-4 font-extrabold ">
+            <p className="md:text-3xl lg:text-4xl lg:mb-8 mb-4 font-extrabold ">
               one of apu apustaja best frens
             </p>
             <div className="lg:space-x-10 space-x-6">
