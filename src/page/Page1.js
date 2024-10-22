@@ -30,14 +30,14 @@ const Page1 = () => {
 
       <div className="mx-auto pt-28 lg:pt-20 relative z-20">
         <div className="flex flex-col lg:flex-row items-center mx-auto container px-4">
-          <div className="lg:w-1/2 text-center lg:space-y-8 lg:ml-7 lg:pt-16 pt-6">
-            <h1 className="text-6xl md:text-9xl lg:text-[11rem] font-bold mb-2">
+          <div className="lg:w-1/2 text-center lg:ml-7 lg:pt-16 pt-6">
+            <h1 className="text-7xl md:text-9xl lg:text-[11rem] font-bold">
               $APUGROOT
             </h1>
-            <p className="md:text-3xl lg:text-4xl lg:mb-8 mb-4 font-extrabold">
+            <p className="text-xl md:text-3xl lg:text-4xl lg:mb-8 mb-4 font-extrabold">
               one of apu apustaja best frens
             </p>
-            <div className="lg:space-x-10 space-x-6">
+            <div className="lg:space-x-10 space-x-6 pt-2">
               <a
                 href="https://dexscreener.com/solana/"
                 className="bg-[#849b33] hover:bg-[#5b6728] md:text-2xl lg:text-3xl text-white font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-24 md:h-12 md:w-44 border-2 border-white"
