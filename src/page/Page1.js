@@ -64,7 +64,7 @@ const Page1 = () => {
                 <span>Chart</span>
               </a> */}
             </div>
-            <h1 className="flex text-xs md:text-3xl font-bold lg:mt-12 mt-6 py-1 px-4 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center">
+            <h1 className="flex text-xs md:text-3xl font-bold lg:mt-12 mt-4 py-1 px-4 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center">
               {copied ? (
                 <span>Copied</span>
               ) : (
