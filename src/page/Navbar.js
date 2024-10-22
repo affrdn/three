@@ -51,10 +51,12 @@ const Navbar = () => {
           <span>$APUGROOT</span>
         </Link>
         <button
-          className="inline-flex items-center bg-[#849b33] hover:bg-[#5b6728] text-white font-bold rounded-lg button h-8 w-24 lg:h-12 lg:w-28 justify-center"
+          className="inline-flex items-center bg-[#849b33] hover:bg-[#5b6728] text-white font-bold rounded-lg button h-8 w-24 md:h-12 md:w-44 justify-center"
           onClick={handleClick}
         >
-          <span className="flex items-center">{buttonText}</span>
+          <span className="flex items-center md:text-2xl lg:text-3xl">
+            {buttonText}
+          </span>
         </button>
       </div>
     </header>
