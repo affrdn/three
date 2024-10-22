@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll"; // Import from react-scroll
+import { Link } from "react-scroll";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
 import LogoApu from "../assets/logo-1.png";
@@ -8,13 +8,13 @@ import { FaRegCopy } from "react-icons/fa";
 
 const Page1 = () => {
   const [copied, setCopied] = useState(false);
-  const ContractAddress = "TBA"; // Set contract address
+  const ContractAddress = "TBA";
 
   const handleCopy = () => {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 2000); // Change back after 2 seconds
+    }, 2000);
   };
 
   return (
@@ -90,9 +90,10 @@ const Page1 = () => {
       <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 md:-rotate-1 border-solid border-4 border-r border-l border-t">
         <div className="flex justify-center lg:space-x-60 space-x-28">
           <a
-            href="https://t.me/apugroot"
+            href="https://x.com/apugrootsol"
             className="text-white hover:scale-90 transition-transform duration-100"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <img
               src={Telegram}
@@ -101,9 +102,10 @@ const Page1 = () => {
             />
           </a>
           <a
-            href="https://x.com/apugrootsolana"
+            href="https://x.com/apugrootsol"
             className="text-white hover:scale-90 transition-transform duration-100"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <img
               src={Twitter}

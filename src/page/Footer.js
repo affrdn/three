@@ -17,7 +17,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://t.me/apugrootsol"
+          href="https://x.com/apugrootsol"
           target="_blank"
           rel="noopener noreferrer"
         >
