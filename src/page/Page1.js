@@ -26,7 +26,7 @@ const Page1 = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black opacity-40 z-10" />
+      <div className="absolute inset-0 bg-black opacity-25 z-10" />
 
       <div className="mx-auto pt-28 lg:pt-20 relative z-20">
         <div className="flex flex-col lg:flex-row items-center mx-auto container px-4">
