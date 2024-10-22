@@ -81,20 +81,3 @@ body {
 .scroll-animation {
   animation: scroll 35s linear infinite;
 }
-
-.custom-pattern-1 {
-  background: linear-gradient(-45deg, #0000 1.3%, #849b33 0 32%, #0000 0),
-    linear-gradient(45deg, #0000 48%, #b6c769 0 52%, #0000 0),
-    linear-gradient(45deg, #0000 1.3%, #849b33 0 32%, #0000 0) calc(10px / 2)
-      calc(10px / 2),
-    linear-gradient(-45deg, #0000 48%, #b6c769 0 52%, #0000 0) #849b33;
-  background-size: calc(2 * 10px) 10px, 10px 10px;
-}
-.custom-pattern {
-  background: linear-gradient(-45deg, #0000 1.3%, #b6c769 0 32%, #0000 0),
-    linear-gradient(45deg, #0000 48%, #849b33 0 52%, #0000 0),
-    linear-gradient(45deg, #0000 1.3%, #b6c769 0 32%, #0000 0) calc(10px / 2)
-      calc(10px / 2),
-    linear-gradient(-45deg, #0000 48%, #849b33 0 52%, #0000 0) #b6c769;
-  background-size: calc(2 * 10px) 10px, 10px 10px;
-}
