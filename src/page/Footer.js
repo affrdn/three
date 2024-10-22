@@ -16,13 +16,21 @@ const Footer = () => {
           </div>
         </a>
 
-        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://x.com/apugrootsol"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="rounded-full border-green-950 p-2 border-2 border-custom-blue  hover:scale-125 transition-transform duration-200">
             <FaTelegramPlane />
           </div>
         </a>
 
-        <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.x.com/apugrootsol"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="rounded-full border-green-950 p-2 border-2 border-custom-blue  hover:scale-125 transition-transform duration-200">
             <FaXTwitter />
           </div>

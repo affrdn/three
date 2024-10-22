@@ -25,8 +25,11 @@ const Page1 = () => {
         backgroundImage: `url(${require("../assets/bg-1.jpg")})`,
       }}
     >
-      <div className="container mx-auto px-4 pt-28 lg:pt-20">
-        <div className="flex flex-col lg:flex-row items-center">
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black opacity-40 z-10" />
+
+      <div className="mx-auto pt-28 lg:pt-20 relative z-20">
+        <div className="flex flex-col lg:flex-row items-center mx-auto container px-4">
           <div className="lg:w-1/2 text-center lg:space-y-8 lg:ml-7 lg:pt-16 pt-6">
             <h1 className="text-6xl md:text-9xl lg:text-[11rem] font-bold mb-2">
               $APUGROOT
@@ -86,33 +89,33 @@ const Page1 = () => {
             <img src={LogoApu} alt="Aped Hero" className="rounded-lg" />
           </div>
         </div>
-      </div>
-      <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 md:-rotate-1 border-solid border-4 border-r border-l border-t">
-        <div className="flex justify-center lg:space-x-60 space-x-28">
-          <a
-            href="https://x.com/"
-            className="text-white hover:scale-90 transition-transform duration-100"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              src={Telegram}
-              alt="Telegram"
-              className="lg:h-14 lg:w-14 h-12 w-12"
-            />
-          </a>
-          <a
-            href="https://x.com/"
-            className="text-white hover:scale-90 transition-transform duration-100"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              src={Twitter}
-              alt="Twitter"
-              className="lg:h-14 lg:w-14 h-12 w-12"
-            />
-          </a>
+        <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 md:-rotate-1 border-solid border-4 border-r border-l border-t">
+          <div className="flex justify-center lg:space-x-60 space-x-28">
+            <a
+              href="https://x.com/apugrootsol"
+              className="text-white hover:scale-90 transition-transform duration-100"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src={Telegram}
+                alt="Telegram"
+                className="lg:h-14 lg:w-14 h-12 w-12"
+              />
+            </a>
+            <a
+              href="https://x.com/apugrootsol"
+              className="text-white hover:scale-90 transition-transform duration-100"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src={Twitter}
+                alt="Twitter"
+                className="lg:h-14 lg:w-14 h-12 w-12"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

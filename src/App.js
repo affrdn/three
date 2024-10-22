@@ -7,7 +7,11 @@ import Footer from "./page/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App relative">
+      {/* Dark overlay */}
+      {/* <div className="absolute inset-0 bg-black opacity-10 z-10" /> */}
+
+      {/* Main content */}
       <Navbar />
       <Page1 />
       <Page2 />
