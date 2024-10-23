@@ -5,6 +5,7 @@ import Twitter from "../assets/twitter.png";
 import LogoApu from "../assets/logo-1.png";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FaRegCopy } from "react-icons/fa";
+import { Analytics } from "@vercel/analytics/react";
 
 const Page1 = () => {
   const [copied, setCopied] = useState(false);
@@ -25,6 +26,7 @@ const Page1 = () => {
         backgroundImage: `url(${require("../assets/bg-1.jpg")})`,
       }}
     >
+      <Analytics />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-25 z-10" />
 
