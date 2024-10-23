@@ -1,6 +1,7 @@
 import React from "react";
-import { FaEnvelope, FaTelegramPlane } from "react-icons/fa"; // Import the email, Telegram, and Twitter icons
-import { FaXTwitter } from "react-icons/fa6";
+import Telegram from "../assets/1.png";
+import Twitter from "../assets/2.png";
+import Mail from "../assets/3.png";
 
 const Footer = () => {
   return (
@@ -11,8 +12,8 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="rounded-full border-green-950  p-2 border-2 border-custom-blue  hover:scale-125 transition-transform duration-200">
-            <FaEnvelope />
+          <div className="rounded-full border-black p-1 border-2 hover:scale-125 transition-transform duration-200">
+            <img src={Mail} alt="Mail" className="lg:h-8 lg:w-8 h-6 w-6" />
           </div>
         </a>
 
@@ -21,8 +22,12 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="rounded-full border-green-950 p-2 border-2 border-custom-blue  hover:scale-125 transition-transform duration-200">
-            <FaTelegramPlane />
+          <div className="rounded-full border-black p-1 border-2 hover:scale-125 transition-transform duration-200">
+            <img
+              src={Telegram}
+              alt="Telegram"
+              className="lg:h-8 lg:w-8 h-6 w-6"
+            />
           </div>
         </a>
 
@@ -31,8 +36,12 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="rounded-full border-green-950 p-2 border-2 border-custom-blue  hover:scale-125 transition-transform duration-200">
-            <FaXTwitter />
+          <div className="rounded-full border-black p-1 border-2 hover:scale-125 transition-transform duration-200">
+            <img
+              src={Twitter}
+              alt="Twitter"
+              className="lg:h-8 lg:w-8 h-6 w-6"
+            />
           </div>
         </a>
       </div>
