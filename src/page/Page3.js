@@ -11,7 +11,7 @@ const Page3 = () => {
     >
       <div className="relative w-full pb-[180%] md:pb-[50%]">
         <iframe
-          src="https://dexscreener.com/solana?embed=1&theme=dark&trades=0"
+          src="https://dexscreener.com/moonshot?embed=1&theme=dark&trades=0"
           className="absolute top-0 left-0 bottom-0 w-full h-full border-0"
           title="Dex Screener"
           aria-label="Dex Screener" // Accessibility improvement
