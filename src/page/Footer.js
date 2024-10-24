@@ -13,21 +13,17 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <div className="rounded-full border-black p-1 border-2 hover:scale-125 transition-transform duration-200">
-            <img src={Mail} alt="Mail" className="lg:h-8 lg:w-8 h-6 w-6" />
+            <img src={Mail} alt="Mail" className="h-6 w-6" />
           </div>
         </a>
 
         <a
-          href="https://x.com/apugrootsol"
+          href="https://t.me/ApuGrootsolana"
           target="_blank"
           rel="noopener noreferrer"
         >
           <div className="rounded-full border-black p-1 border-2 hover:scale-125 transition-transform duration-200">
-            <img
-              src={Telegram}
-              alt="Telegram"
-              className="lg:h-8 lg:w-8 h-6 w-6"
-            />
+            <img src={Telegram} alt="Telegram" className="h-6 w-6" />
           </div>
         </a>
 
@@ -37,11 +33,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <div className="rounded-full border-black p-1 border-2 hover:scale-125 transition-transform duration-200">
-            <img
-              src={Twitter}
-              alt="Twitter"
-              className="lg:h-8 lg:w-8 h-6 w-6"
-            />
+            <img src={Twitter} alt="Twitter" className="h-6 w-6" />
           </div>
         </a>
       </div>

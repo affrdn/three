@@ -41,7 +41,7 @@ const Page1 = () => {
             </p>
             <div className="lg:space-x-10 space-x-6 pt-2">
               <a
-                href="https://dexscreener.com/solana/"
+                href={`https://dexscreener.com/solana/${ContractAddress}`}
                 className="bg-[#849b33] hover:bg-[#5b6728] md:text-2xl lg:text-3xl text-white font-extrabold rounded-full inline-flex items-center justify-center button h-8 w-24 md:h-12 md:w-44 border-2 border-white"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -94,7 +94,7 @@ const Page1 = () => {
         <div className="bg-[#849b33] relative bottom-0 left-0 right-0 p-4 z-10 md:-rotate-1 border-solid border-4 border-r border-l border-t">
           <div className="flex justify-center lg:space-x-60 space-x-28">
             <a
-              href="https://x.com/apugrootsol"
+              href="https://t.me/ApuGrootsolana"
               className="text-white hover:scale-90 transition-transform duration-100"
               rel="noopener noreferrer"
               target="_blank"
