@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import Telegram from "../assets/telegram.png";
 import Twitter from "../assets/twitter.png";
@@ -10,6 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 const Page1 = () => {
   const [copied, setCopied] = useState(false);
   const ContractAddress = "TBA";
+  const [timeRemaining, setTimeRemaining] = useState("00:00:00");
 
   const handleCopy = () => {
     setCopied(true);
@@ -17,6 +18,35 @@ const Page1 = () => {
       setCopied(false);
     }, 700);
   };
+
+  // Countdown Timer Logic
+  useEffect(() => {
+    const targetDate = new Date("2024-10-25T23:00:00");
+    const timerId = setInterval(() => {
+      const now = new Date();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        const totalHours = Math.floor(difference / (1000 * 60 * 60));
+        const minutes = Math.floor(
+          (difference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setTimeRemaining(
+          `${String(totalHours).padStart(2, "0")}:${String(minutes).padStart(
+            2,
+            "0"
+          )}:${String(seconds).padStart(2, "0")}`
+        );
+      } else {
+        setTimeRemaining("00:00:00");
+        clearInterval(timerId);
+      }
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, []);
 
   return (
     <div
@@ -70,12 +100,22 @@ const Page1 = () => {
                 <span>Chart</span>
               </Link>
             </div>
-            <h1 className="flex button text-xs md:text-2xl font-bold lg:mt-12 mt-4 py-1 px-4 border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center">
+            <h1
+              className={`${
+                timeRemaining === "00:00:00"
+                  ? "text-xs md:text-2xl px-4"
+                  : "text-3xl"
+              } flex button font-bold lg:mt-12 mt-4 py-1  border-solid border-2 bg-[#849b33] hover:bg-[#5b6728] rounded-full justify-center items-center`}
+            >
               {copied ? (
                 <span>Copied</span>
               ) : (
                 <>
-                  <span className="lg:mr-4 mr-2">CA: {ContractAddress}</span>
+                  <span className="lg:mr-4 mr-2">
+                    {timeRemaining === "00:00:00"
+                      ? `CA: ${ContractAddress}`
+                      : timeRemaining}
+                  </span>
                   {ContractAddress !== "TBA" && (
                     <CopyToClipboard text={ContractAddress} onCopy={handleCopy}>
                       <span className="cursor-pointer">
